@@ -20,6 +20,6 @@ before_install:
   - android update sdk --filter 1,2,${ANDROID_TARGET} --no-ui --force <<< y
 script:
   - android list targets
-  - android update project --target ${ANDROID_TARGET}
+  - android update project --path astrid --target ${ANDROID_TARGET}
   - cd ..
   - ant ${TARGET}
