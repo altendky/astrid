@@ -21,5 +21,4 @@ before_install:
 script:
   - android list targets
   - android update project --path astrid --target ${ANDROID_TARGET}
-  - cd ..
   - ant ${TARGET}
