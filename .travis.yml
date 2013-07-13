@@ -7,10 +7,12 @@ before_install:
   - export TARGET=release-nomarket
   - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
   - set
-  - ls /home/travis/build/android-sdk-linux/tools/android
+  - pwd
+  - ls
   # download the latest android sdk and unzip (http://developer.android.com/sdk/index.html)
   - wget http://dl.google.com/android/${ANDROID_SDK_TGZ}
   - tar -zvxf ${ANDROID_SDK_TGZ}
+  - ls /home/travis/build/android-sdk-linux/tools/android
   # only update the sdk for the tools and platform-tools (1,2) and whatever api level
   # you are building for android (run "android list sdk" to get the full list.  9 = 2.3.3 or API level 10
   # or see http://developer.android.com/guide/topics/manifest/uses-sdk-element.html
