@@ -8,6 +8,7 @@ env:
     TARGET=release-nomarket
 language: java
 before_install:
+  - set
   # download the latest android sdk and unzip (http://developer.android.com/sdk/index.html)
   - wget http://dl.google.com/android/${ANDROID_SDK_TGZ}
   - tar -zxf ${ANDROID_SDK_TGZ}
