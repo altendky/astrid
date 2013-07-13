@@ -19,5 +19,5 @@ before_install:
   # or see http://developer.android.com/guide/topics/manifest/uses-sdk-element.html
   - android update sdk --filter 1,2,${ANDROID_API_LEVEL} --no-ui --force <<< y
 script:
-  - android update project --path astrid/ --target ${TARGET}
+  - android update project --path astrid/ --target ${SUBTARGET}
   - ant ${TARGET}
