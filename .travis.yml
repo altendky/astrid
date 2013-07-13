@@ -5,6 +5,7 @@ before_install:
   - export ANDROID_API_LEVEL=17
   - export ANDROID_HOME=`pwd`/android-sdk-linux
   - export TARGET=release-nomarket
+  - export SUBTARGET=release-custom
   - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
   - set
   - pwd
