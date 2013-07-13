@@ -4,10 +4,10 @@ env:
     ANDROID_SDK_TGZ=android-sdk_r${ANDROID_SDK_VERSION}-linux.tgz
     ANDROID_API_LEVEL=17
     ANDROID_HOME=`pwd`/android-sdk-linux
-    PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
     TARGET=release-nomarket
 language: java
 before_install:
+  - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
   - set
   # download the latest android sdk and unzip (http://developer.android.com/sdk/index.html)
   - wget http://dl.google.com/android/${ANDROID_SDK_TGZ}
