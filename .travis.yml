@@ -21,11 +21,5 @@ before_install:
   - android update sdk --filter 1,2,${ANDROID_TARGET} --no-ui --force <<< y
 script:
   - android list targets
-  - android update project --path astrid --target ${ANDROID_TARGET}
-  - android update project --path android-aac-enc --target ${ANDROID_TARGET}
-  - android update project --path actionbarsherlock/library --target ${ANDROID_TARGET}
-  - android update project --path greendroid/GreenDroid --target ${ANDROID_TARGET}
-  - android update project --path viewPagerIndicator/library --target ${ANDROID_TARGET}
-  - android update project --path facebook/facebook --target ${ANDROID_TARGET}
-  - android update project --path api --target ${ANDROID_TARGET}
+  - android update project --path . --target ${ANDROID_TARGET} --subprojects
   - ant ${TARGET}
