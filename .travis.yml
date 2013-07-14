@@ -22,7 +22,5 @@ before_install:
 script:
   - android list targets
   - android update project --path astrid --target ${ANDROID_TARGET}
-  - cd android-aac-enc
-  - android update project --path astrid --target ${ANDROID_TARGET}
-  - cd ${ROOT}
+  - android update project --path android-aac-enc --target ${ANDROID_TARGET}
   - ant ${TARGET}
