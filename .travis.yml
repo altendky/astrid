@@ -23,4 +23,5 @@ script:
   - android list targets
   - android update project --path astrid --target ${ANDROID_TARGET}
   - android update project --path android-aac-enc --target ${ANDROID_TARGET}
+  - android update project --path actionbarsherlock/library --target ${ANDROID_TARGET}
   - ant ${TARGET}
