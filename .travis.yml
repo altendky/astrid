@@ -27,4 +27,5 @@ script:
   - android update project --path greendroid/GreenDroid --target ${ANDROID_TARGET}
   - android update project --path viewPagerIndicator/library --target ${ANDROID_TARGET}
   - android update project --path facebook/facebook --target ${ANDROID_TARGET}
+  - android update project --path api --target ${ANDROID_TARGET}
   - ant ${TARGET}
